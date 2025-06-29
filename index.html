@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Register Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('https://cdn.discordapp.com/attachments/1313430811864731703/1388987000131948584/gay.png?ex=6862fa72&is=6861a8f2&hm=b750ee79ea71809f19bcb34f7e8bd6f5e350c17876fc5beb88b14432f9c79dad&'); /* You can change this URL */
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #registerForm {
+      display: none;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00bfff;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 40px;
+    }
+
+    button:hover {
+      background-color: #0099cc;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="registerForm">
+    <h2>Register</h2>
+    <input type="text" placeholder="Username" /><br />
+    <input type="email" placeholder="Email" /><br />
+    <input type="password" placeholder="Password" /><br />
+    <button onclick="alert('Registered!')">Submit</button>
+  </div>
+
+  <button onclick="document.getElementById('registerForm').style.display='block'">Register</button>
+
+</body>
+</html>
